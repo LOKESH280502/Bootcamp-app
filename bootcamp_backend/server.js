@@ -50,7 +50,7 @@ app.use("/api/v1/auth", authRouter);
 app.use(errorhandler);
 
 // Start server
-const PORT = process.env.PORT || 5000;
+ 
 app.listen(PORT, (err) => {
   if (err) throw err;
   console.log(

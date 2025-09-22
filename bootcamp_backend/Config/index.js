@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config({ path: "./.env" }); 
-export const PORT = process.env.PORT;
-export const NODE_ENV = process.env.NODE_ENV;
+export const PORT = process.env.PORT || 5000;
+export const NODE_ENV = process.env.NODE_ENV || "development";
 export const MONGODB_URL = process.env.MONGODB_URL;
 export const GEOCODER_PROVIDER = process.env.GEOCODER_PROVIDER;
 export const GEOCODER_API_KEY = process.env.GEOCODER_API_KEY;
